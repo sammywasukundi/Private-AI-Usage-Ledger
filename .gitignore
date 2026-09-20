@@ -53,6 +53,11 @@ coverage/
 tmp/
 temp/
 
+# Frontend (Vite) local artifacts
+frontend/.vite/
+frontend/dist/
+frontend/*.local
+
 # Midnight network state (per-network seeds, deploy addresses)
 .midnight-state.json
 
