@@ -200,6 +200,22 @@ zkai-ledger/
 └── tsconfig.json
 ```
 
+## Frontend — dashboard MVP
+
+Un dashboard React/Vite/TypeScript vit dans `frontend/`, indépendant du
+reste du projet (aucune dépendance `@midnight-ntwrk/*` pour l'instant).
+Il tourne aujourd'hui sur des données 100% fictives pour valider l'UX
+avant le branchement au contrat réel.
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Voir `docs/FRONTEND.md` pour le détail, et `docs/ARCHITECTURE.md` pour le
+plan de branchement au contrat déployé.
+
 ## Compact compiler version
 
 `.compact-version` at the create-mn-app repo root pinned the compiler
