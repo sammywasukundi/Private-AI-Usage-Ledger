@@ -1,5 +1,9 @@
 # zkai-ledger
 
+[![CI](https://github.com/sammywasukundi/Private-AI-Usage-Ledger/actions/workflows/ci.yml/badge.svg)](https://github.com/sammywasukundi/Private-AI-Usage-Ledger/actions/workflows/ci.yml)
+
+🐦 Follow the project: https://x.com/zkailedger
+
 A Midnight Network smart contract scaffolded with create-mn-app.
 
 ## Quick start
@@ -226,3 +230,16 @@ compiler to that version:
 compact update <version>
 compact use <version>
 ```
+
+## Déploiement Preprod
+
+**Contrat produit (AIUsageLedger)** — celui qui compte pour la soumission :
+
+```
+7b75364fa2ed5863aa6594f2f3f011a82974a30360783774ee0fdaa56eb0be10
+```
+
+Vérifiable sur [preprod.midnightexplorer.com](https://preprod.midnightexplorer.com/)
+ou [midnight-preprod.subscan.io](https://midnight-preprod.subscan.io/).
+
+Contrat source : `contracts/ai-usage-ledger.compact`.
