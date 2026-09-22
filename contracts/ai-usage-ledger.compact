@@ -1,0 +1,19 @@
+pragma language_version >= 0.23;
+
+import CompactStandardLibrary;
+
+export ledger policyVersion: Uint<32>;
+export ledger eventCount: Uint<64>;
+export ledger lastTool: Bytes<32>;
+export ledger lastDepartment: Bytes<32>;
+
+export circuit initializePolicy(version: Uint<32>): [] {
+  policyVersion = disclose(version);
+  eventCount = 0;
+}
+
+export circuit submitUsageEvent(tool: Bytes<32>, department: Bytes<32>): [] {
+  lastTool = disclose(tool);
+  lastDepartment = disclose(department);
+  eventCount = (eventCount + 1) as Uint<64>;
+}
