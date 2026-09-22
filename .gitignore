@@ -63,3 +63,6 @@ frontend/*.local
 
 # Midnight wallet sync state (per-network serialized wallet state cache)
 .midnight-wallet-state/
+
+# Midnight local LevelDB cache (wallet sync data)
+midnight-level-db/
