@@ -30,6 +30,6 @@ jobs:
         shell: bash
         run: |
           curl --proto '=https' --tlsv1.2 -LsSf https://github.com/midnightntwrk/compact/releases/latest/download/compact-installer.sh | sh
-          source "$HOME/.bashrc" || true
-          export PATH="$HOME/.compact/bin:$PATH"
+          export PATH="$HOME/.local/bin:$PATH"
+          compact update
           compact compile contracts/ai-usage-ledger.compact contracts/managed/ai-usage-ledger
