@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Dashboard } from "./components/Dashboard";
 import { AuditView } from "./components/AuditView";
+import { ChainStatusPanel } from "./components/ChainStatusPanel";
 
 type Tab = "dashboard" | "audit";
 
@@ -12,7 +13,7 @@ export default function App() {
       <header className="app-header">
         <div>
           <h1>Private AI Usage Ledger</h1>
-          <p className="subtitle">MVP frontend — données fictives, aucune connexion Midnight pour l'instant</p>
+          <p className="subtitle">Dashboard connecté au wallet 1AM — contrat AIUsageLedger live sur Preprod</p>
         </div>
         <nav>
           <button className={tab === "dashboard" ? "active" : ""} onClick={() => setTab("dashboard")}>
@@ -24,10 +25,13 @@ export default function App() {
         </nav>
       </header>
 
-      <main>{tab === "dashboard" ? <Dashboard /> : <AuditView />}</main>
+      <main>
+        <ChainStatusPanel />
+        {tab === "dashboard" ? <Dashboard /> : <AuditView />}
+      </main>
 
       <footer>
-        <span className="badge badge-demo">Données de démonstration</span>
+        <span className="badge badge-demo">Événements ci-dessous : données de démonstration — connexion wallet et état du contrat : réels</span>
       </footer>
     </div>
   );
