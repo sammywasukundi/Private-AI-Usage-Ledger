@@ -4,6 +4,8 @@
 
 🐦 Follow the project: https://x.com/zkailedger
 
+Demo video: https://youtu.be/qAIMXF_1T8g
+
 A Midnight Network smart contract scaffolded with create-mn-app.
 
 ## Quick start
